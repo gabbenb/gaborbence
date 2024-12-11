@@ -6,8 +6,6 @@ function App(){
         },
         "App",
         React.createElement(BoxComponent)
- 
- 
     );
 }
  
@@ -15,9 +13,7 @@ function App(){
 function BoxComponent(props){
     return React.createElement(
         "div",
- 
         {
- 
             style:{
                 width:"200px",
                 height:"200px",
@@ -28,8 +24,9 @@ function BoxComponent(props){
         },
     );
 }
+
+
 ReactDOM.render (
     React.createElement(App),
     document.getElementById("app-container")
- 
 );
