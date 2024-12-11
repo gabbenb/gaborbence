@@ -8,4 +8,3 @@ btn.onclick=function()
 btn.innerHTML="Natív gomb";
 
 document.getElementById("nativ-button-container").appendChild(btn);
- 
