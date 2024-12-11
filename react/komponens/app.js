@@ -1,17 +1,20 @@
 function App(){
-    return React.createElement(
+   
+    return React.createElement( //létre hozunk egy divet
         "div",
         {
-            className:"border"
+            className:"border" //meghívunk egy bootstrapes osztályt
         },
         "App",
+        React.createElement(BoxComponent),
+        React.createElement(BoxComponent),
         React.createElement(BoxComponent)
     );
 }
  
- 
+//BoxComponens létrehozása a megadott stíluselemekkel
 function BoxComponent(props){
-    return React.createElement(
+    return React.createElement( //létre hozunk egy divet
         "div",
         {
             style:{
@@ -20,12 +23,12 @@ function BoxComponent(props){
                 backgroundColor:"red",
  
             },
-            className:"p-2 m-5 rounded",
+            className:"p-2 m-5 rounded", //meghívunk egy bootstrapes osztályt
         },
     );
 }
 
-
+//az app componens a render függvénnyel meghívja az app-containert
 ReactDOM.render (
     React.createElement(App),
     document.getElementById("app-container")
